@@ -14,4 +14,4 @@ Web scraping odatda web saytga HTTP so'rovlarini yuborishni va keyin kerakli ma'
 
 🚀 [Selenium](https://pypi.org/project/selenium/) version = 4.10.0
 
-Shuni ta'kidlash kerakki, veb-saytlarni qirqish paytida siz veb-saytning xizmat ko'rsatish shartlarini hurmat qilishingiz, huquqiy va axloqiy ko'rsatmalarga rioya qilishingiz va mualliflik huquqi yoki ma'lumotlarni himoya qilish bo'yicha har qanday amaldagi qonunlarni yodda tutishingiz kerak.
+```Web saytlarni scrap qilish paytida saytning xizmat ko'rsatish shartlarini hurmat qilish, huquqiy va axloqiy ko'rsatmalarga rioya qilish va mualliflik huquqi yoki ma'lumotlarni himoya qilish bo'yicha har qanday amaldagi qonunlarni yodda tutish kerak.```
