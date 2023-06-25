@@ -10,7 +10,7 @@ Web scraping odatda web saytga HTTP so'rovlarini yuborishni va keyin kerakli ma'
 
 #### Scraping uchun kerakli kutubxonalar (environments):
 
-🚀 BeautifulSoup(https://pypi.org/project/beautifulsoup4/) version = 4.12.2
+🚀 [BeautifulSoup](https://pypi.org/project/beautifulsoup4/) version = 4.12.2
 
 🚀 Scrapy 
 
