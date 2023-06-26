@@ -53,6 +53,8 @@ for item in items:
     print(url+"/uz"+item["href"])
 ```
 
+Kategoriya nomlarini listga yig'ib olamiz:
+
 ```python
 category_name = [category.split("/")[-1] for category in menu]
 category_name
