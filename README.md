@@ -103,6 +103,13 @@ with open("qalampir_uz.txt", "+a") as file:
             file.write(f"{href}{separator}{category}\n")
 ```
 
+Ushbu sahifadan yangilikning sarlavhasini scrap qilib olamiz.
+![category](https://github.com/MisterFoziljon/Web-Scraping/blob/main/rasmlar/title.png)
+
+Bu sahifadan esa kontentni scrap qilib olamiz.
+![category](https://github.com/MisterFoziljon/Web-Scraping/blob/main/rasmlar/p.png)
+
+Bu yerda xuddi shu amallar bajarilishini ko'rishingiz mumkin:
 
 ```python
 with open("qalampir.txt","+a") as wfile:
@@ -115,11 +122,13 @@ with open("qalampir.txt","+a") as wfile:
             html_content = driver.page_source
             soup = BeautifulSoup(html_content, "html.parser")
 
-            title = soup.find("h1",class_="text").text
-            content = "".join([p.text for p in soup.find("div", class_ = "row g-4 my-main-content").find_all("p")])
+            title = soup.find("h1",class_="text").text # sarlavhani olish 
+            content = "".join([p.text for p in soup.find("div", class_ = "row g-4 my-main-content").find_all("p")]) # content ni olish
 
             wfile.write(f"{title}{separator}{content}{separator}{category}\n")
 ```
+
+Yig'ilgan dataset *.txt formatidan *.csv formatiga o'tkaziladi. Bunda pandas kutubxonasidagi DataFrame dan foydalanamiz.
 
 ```python
 def clean_element(element):
