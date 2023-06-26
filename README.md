@@ -25,7 +25,9 @@ from selenium.webdriver.firefox.service import Service
 from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
 ```
-asdjasdjasdjasdjasdjasdjasdjasd
+
+[Webdriver](https://medium.com/coderbyte/why-is-selenium-webdriver-a-popular-choice-for-automation-testing-3bc2aee57bff) sifatida gecodriver dan foydalanamiz. Web brauzer sifatida Firefox dan foydalanilgan. Webdriverning kerakli sozlamalari o'rnatilgan va web brauzer foydalanish uchun tayyor holatga keltirilgan.
+
 ```python
 webdriver_path = 'geckodriver'
 binary_path = "C:\Program Files (x86)\Mozilla Firefox\firefox.exe"
@@ -34,11 +36,13 @@ firefox_options.add_argument('--headless')
 firefox_options.add_argument('--no-sandbox')
 driver = webdriver.Firefox(service=Service(webdriver_path), options=firefox_options)
 ```
+
 Yangiliklarni scrap qilish uchun [qalampir.uz](https://qalampir.uz) sayti tanlab olindi:
 
 ```python
 url = "https://qalampir.uz"
 ```
+
 Saytning o'zbek (lotin) tilidagi sahifalarini scrap qilamiz. Yangiliklar turli kategoriyalarda bo'lgani uchun barcha kategoriya linklarini quyidagi usulda olamiz:
 
 ```python
@@ -59,6 +63,10 @@ Kategoriya nomlarini listga yig'ib olamiz:
 category_name = [category.split("/")[-1] for category in menu]
 category_name
 ```
+
+![category](https://github.com/MisterFoziljon/Web-Scraping/blob/main/rasmlar/category.png)
+
+Har bir kategoriyaga tegishli bo'lgan barcha yangiliklarni ochib olamiz. Har bir yangilik linki va kategoriyasini faylga yig'amiz.
 
 ```python
 with open("qalampir_uz.txt", "+a") as file:
@@ -94,6 +102,7 @@ with open("qalampir_uz.txt", "+a") as file:
             href = url+item["href"]
             file.write(f"{href}{separator}{category}\n")
 ```
+
 
 ```python
 with open("qalampir.txt","+a") as wfile:
