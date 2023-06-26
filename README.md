@@ -14,4 +14,16 @@ Web scraping odatda web saytga HTTP so'rovlarini yuborishni va keyin kerakli ma'
 
 🚀 [Selenium](https://pypi.org/project/selenium/) version = 4.10.0
 
+Kerakli kutubxonalarni import qilamiz
+
+```python
+from bs4 import BeautifulSoup 
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.options import Options
+from selenium.webdriver.firefox.service import Service
+from selenium.common.exceptions import NoSuchElementException
+import pandas as pd
+```
+
 ```Web saytlarni scrap qilish paytida saytning xizmat ko'rsatish shartlarini hurmat qilish, huquqiy va axloqiy ko'rsatmalarga rioya qilish va mualliflik huquqi yoki ma'lumotlarni himoya qilish bo'yicha har qanday amaldagi qonunlarni yodda tutish kerak.```
