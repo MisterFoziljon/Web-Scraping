@@ -66,7 +66,12 @@ category_name
 
 ![category](https://github.com/MisterFoziljon/Web-Scraping/blob/main/rasmlar/category.png)
 
-Har bir kategoriyaga tegishli bo'lgan barcha yangiliklarni ochib olamiz. Har bir yangilik linki va kategoriyasini faylga yig'amiz.
+Har bir kategoriyaga tegishli bo'lgan barcha sahifalarni ochib olamiz. 
+Buning uchun sahifa ostidagi ```Yana yuklash``` tugmachasini sahifalar to'liq ochilib bo'lguniga qadar bosib boramiz.
+
+![category](https://github.com/MisterFoziljon/Web-Scraping/blob/main/rasmlar/button.png)
+
+Har bir yangilik linki va kategoriyasini faylga saqlab boramiz.
 
 ```python
 with open("qalampir_uz.txt", "+a") as file:
