@@ -151,6 +151,12 @@ with open("qalampir.txt") as file:
 dataset.head()
 ```
 
+Bir nomdagi sarlavhaga ega yangiliklarni o'chirib tashlaymiz:
+
+```python
+dataset = dataset.dropna().drop_duplicates(subset=['title'])
+```
+
 Hosil bo'lgan Data Frame ni csv holatida saqlaymiz.
 
 ```python
